@@ -1,0 +1,150 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bakery Delight</title>
+  <style>
+    :root {
+      --primary: #ffb6b9;
+      --secondary: #fff0f5;
+      --accent: #ff6f91;
+      --text: #333;
+    }
+
+    * {
+      box-sizing: border-box;
+      transition: all 0.4s ease;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--secondary);
+      color: var(--text);
+      opacity: 0;
+      animation: fadeIn 1.5s ease forwards;
+    }
+
+    @keyframes fadeIn { to { opacity: 1; } }
+
+    .navbar {
+      background-color: var(--primary);
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      background-color: var(--primary);
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      color: white;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: white;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      color: var(--accent);
+    }
+
+    .cta-button {
+      background-color: var(--accent);
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 1.5rem;
+      transform: scale(1);
+    }
+
+    .cta-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+    }
+
+
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      padding: 2rem;
+    }
+
+    .menu-item {
+      background-color: white;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      width: 250px;
+      text-align: center;
+    }
+
+    .menu-item img {
+      max-width: 100%;
+      border-radius: 8px;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    footer {
+      background-color: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation bar -->
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <header>
+    <h1>Bakery Delight</h1>
+    <p>Fresh. Sweet. Delicious.</p>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to Bakery Delight</h2>
+    <p>Indulge in our freshly baked goods made with love and the finest ingredients.</p>
+    <a href="menu.html"><button class="cta-button">View Full Menu</button></a>
+  </section>
+
+  <footer>
+    <p>© 2025 Bakery Delight. Made with ❤️ by Amna</p>
+  </footer>
+</body>
+</html>
